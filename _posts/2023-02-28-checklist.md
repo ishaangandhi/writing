@@ -44,7 +44,7 @@ Using that minute to follow this checklist will show your interviewer you care a
             string dueMonth = atoi(loan.dueDate.substr(5));
             if (dueYear < currentYear())
                 return false;
-            if (dueYear == currentYear() && dueMonth < currentMont())
+            if (dueYear == currentYear() && dueMonth < currentMonth())
                 return false;
         }
         return true;
