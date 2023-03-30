@@ -63,7 +63,7 @@ Using that minute to follow this checklist will show your interviewer you care a
         return {year, month};
     }
 
-    bool loanIsOverdue(const Loan &loan) {
+    bool isLoanOverdue(const Loan &loan) {
         // Code in this function uses "date" abstractions
         pair<int, int> dueYearAndMonth = parseYearAndMonth(loan.dueDate);
         return dueYearAndMonth < make_pair(currentYear(), currentMonth());
@@ -72,7 +72,7 @@ Using that minute to follow this checklist will show your interviewer you care a
     bool hasOverdueBooks(ID userId) {
         // Code in this function uses "library" abstractions
         set<Loan> usersLoans = getLoansForUser(userId);
-        return any_of(usersLoans.begin(), usersLoans.end(), loanIsOverdue);
+        return any_of(usersLoans.begin(), usersLoans.end(), isLoanOverdue);
     }
     ```
 
