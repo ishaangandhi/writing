@@ -58,8 +58,8 @@ Using that minute to follow this checklist will show your interviewer you care a
     ```c++
     pair<int, int> parseYearAndMonth(const string& s) {
         // Code in this function uses "string" abstractions
-        int year = s.substr(0, 4);
-        int month = s.substr(5);
+        int year = atoi(s.substr(0, 4));
+        int month = atoi(s.substr(5));
         return {year, month};
     }
 
