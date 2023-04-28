@@ -84,7 +84,7 @@ Using that minute to follow this checklist will show your interviewer you care a
 
 5. **Avoid magic numbers**
 
-    Replace these with well-named constant variables.
+    Replace these with well-named constants.
 
 6. **Trace through the parts of code similar to `index + 1` or `index - 1`.**
 
