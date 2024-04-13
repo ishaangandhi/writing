@@ -1,1 +1,3 @@
 theme: minima
+url: 'https://ishaangandhi.com/' # your main domain
+baseurl: 'writing/' # if you're using custom domain keep this blank example: baseurl: ''
